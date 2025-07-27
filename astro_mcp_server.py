@@ -90,7 +90,7 @@ async def publish_blog_post(
         
         frontmatter = f"""---
 title: "{title}"
-pubDate: {datetime.date.today().isoformat()}
+pubDate: {datetime.datetime.now().isoformat()}
 description: "Article published via MCP"
 author: "AI Assistant"
 ---
